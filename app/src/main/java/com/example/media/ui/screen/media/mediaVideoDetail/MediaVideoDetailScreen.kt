@@ -61,64 +61,6 @@ import com.example.media.ui.constant.FunctionConstants.Companion.extractTime
 import com.example.media.ui.constant.FunctionConstants.Companion.extractVideoDuration
 import com.example.media.ui.viewModel.MediaViewModel
 
-/*@Composable
-fun MediaVideoDetailScreen( id: Int = 0,
-                            name: String,
-                            videoUri : String,
-                            viewModel: MediaViewModel = hiltViewModel()
-) {
-
-    val image by produceState<MediaVideo?>(initialValue = null) {
-        value = viewModel.getVideoById(id)
-    }
-
-
-    val uri = Uri.parse(image?.videoUri)
-
-    AndroidView(
-        factory = { ctx ->
-            VideoView(ctx).apply {
-                setVideoURI(uri)
-
-                // Attach MediaController
-                val mediaController = MediaController(ctx)
-                mediaController.setAnchorView(this)
-                setMediaController(mediaController)
-
-                setOnPreparedListener { mediaPlayer ->
-                    mediaPlayer.setOnVideoSizeChangedListener { _, _, _ ->
-                        mediaController.setAnchorView(this)
-                    }
-                    start()
-                }
-
-                setOnErrorListener { _, what, extra ->
-                    Toast.makeText(ctx, "Cannot play this video", Toast.LENGTH_SHORT).show()
-                    true
-                }
-            }
-        },
-        modifier = Modifier.fillMaxSize()
-    )
-
-
-}
-
-@Composable
-fun MediaVideoDetailScreenPreview(videoUri: String){
-
-    AndroidView(
-        factory = { ctx ->
-            VideoView(ctx).apply {
-                setVideoURI(Uri.parse(videoUri))
-                setMediaController(MediaController(ctx))
-                setOnPreparedListener { start() }
-            }
-        },
-        modifier = Modifier.fillMaxSize()
-    )
-
-}*/
 
 
 

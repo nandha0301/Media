@@ -270,12 +270,7 @@ fun LoginCardView(navigateToSignUpScreen : () -> Unit, navigateToMediaGalleryScr
                 singleLine = true
             )
 
-            /*if (isLoading) {
-                CircularProgressIndicator(
-                    modifier = Modifier.align(Alignment.CenterHorizontally).padding(10.dp),
-                    color = colorResource(id = R.color.color_primary)
-                )
-            }*/
+
 
 
             Button(

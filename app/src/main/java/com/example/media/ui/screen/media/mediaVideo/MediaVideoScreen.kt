@@ -195,42 +195,7 @@ fun VideoCardView(
 
 
 
-/*@Composable
-fun VideoCardView(video : MediaVideo,navigateToMediaVideoDetailScreen :(MediaVideo) -> Unit){
-    val thumbnailBitmap = video.thumbnail?.let { byteArrayToBitmap(it) } // Load stored thumbnail
 
-
-    Card(elevation = CardDefaults.cardElevation(2.dp),
-        shape = RoundedCornerShape(10.dp),
-        modifier = Modifier.fillMaxWidth()
-            .height(140.dp)
-            .padding(10.dp)
-            .clickable(interactionSource = remember { MutableInteractionSource() },
-                indication = null) {navigateToMediaVideoDetailScreen(video)},
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.MediaBackgroundBtoW)) {
-        Column(modifier = Modifier.padding(5.dp)) {
-            Text(text = video.name, fontWeight = FontWeight.Bold)
-            Spacer(modifier = Modifier.height(8.dp))
-            if (thumbnailBitmap != null) {
-                Image(
-                    bitmap = thumbnailBitmap.asImageBitmap(),
-                    contentDescription = "Video Thumbnail",
-                    modifier = Modifier.size(80.dp),
-                    contentScale = ContentScale.Crop
-                )
-            } else {
-                Icon(imageVector = Icons.Default.VideoLibrary,
-                    contentDescription = "Default Thumbnail",
-                    modifier = Modifier.size(80.dp),
-                    tint = Color.Gray)
-            }
-
-        }
-
-
-        }
-
-}*/
 
 @PreviewLightDark
 @Composable

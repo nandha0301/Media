@@ -50,7 +50,7 @@ fun SplashScreen(navController: NavController) {
     Box(modifier = Modifier.fillMaxSize()) {
         GlideImage(model = null,
             contentDescription = null,
-            loading = placeholder(R.drawable.onecare_app_intro_animation),
+            loading = placeholder(R.drawable.media_animation),
             modifier = Modifier.fillMaxSize(),
             contentScale = ContentScale.Crop)
     }
