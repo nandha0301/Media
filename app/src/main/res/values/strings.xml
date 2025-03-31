@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Media</string>
+    <string name="login">Log In</string>
+    <string name="signup">Sign Up</string>
+    <string name="do_not_have_an_account_join_us">Don’t have an account?Join us</string>
+    <string name="already_have_an_account_login">Already have an account? Login?</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="upload_video">Upload Video</string>
+</resources>
